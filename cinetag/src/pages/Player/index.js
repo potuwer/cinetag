@@ -9,7 +9,7 @@ function Player() {
     const parametros = useParams();
     const [video, setVideo] = useState([])
     useEffect(() => {
-        fetch(`https://my-json-server.typicode.com/potuwer/cinetag-api/videos?id=${parametros.id}`)
+        fetch(`https://my-json-server.typicode.com/potuwer/cinetag/videos?id=${parametros.id}`)
         .then(resposta => resposta.json())
         .then(dados => {
             setVideo(...dados)
